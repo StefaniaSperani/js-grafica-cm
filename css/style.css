@@ -6,6 +6,7 @@
     --violet: #3400F6;
     --blue: #0B16DE;
     --azure: #0D58FA;
+    --white: #ffffff;
 }
 
 body{
@@ -32,7 +33,7 @@ main{
     background-color: var(--violet);
     border: 1px solid var(--violet);
     border-radius: 20px;
-    color: white;
+    color: var(--white);
     padding: 5px 10px;
 }
 
@@ -42,7 +43,7 @@ main{
     flex-wrap: wrap;
     align-content: flex-start;
     background-color: var(--azure);
-    box-shadow: 0px 0px 30px #fffefe;
+    box-shadow: 0px 0px 30px var(--white);
     width: 500px;
     height: 500px;
     cursor: pointer;
@@ -55,9 +56,10 @@ main{
 }
 .click-color{
     background-color: var(--blue);
-    color: white;
+    color: var(--white);
 }
 .click-color-bomb{
     background-color: rgb(185, 19, 19);
-    color: white;
+    color: var(--white);
+
 }
