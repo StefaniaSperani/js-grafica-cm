@@ -1,0 +1,36 @@
+/* COMMON */
+
+:root {
+    --purple: #C20DFA;
+    --deep-purple: #720BDE;
+    --violet: #3400F6;
+    --blue: #0B16DE;
+    --azure: #0D58FA;
+}
+
+body{
+    background-color: var(--deep-purple);
+}
+
+header, 
+footer {
+    background-color: var(--purple);
+    height: 60px;
+}
+
+main{
+    height: calc(100vh - 120px);
+}
+
+/* HEADER */
+.img-bomba img{
+    width: 60px;
+}
+.btn-scegli{
+    background-color: var(--violet);
+    border: 1px solid var(--violet);
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+
+}
