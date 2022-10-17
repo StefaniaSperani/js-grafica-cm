@@ -65,9 +65,9 @@ console.log('Inizia!');
         if(!bombsPosition.includes(bomb)){
             //e se tutto è ok li PUSHO nell'array
             bombsPosition.push(bomb);
-            // console.log(bombsPosition);
         }
     }
+    console.log(bombsPosition);
     
     //2.creo la funzione che crea la cella
     function drawCell(num){
@@ -91,7 +91,11 @@ console.log('Inizia!');
         //quindi aggiungo uno stile tramite la classe
         //che ho preparato su css
         cell.addEventListener('click', function(){
-            this.classList.add('click-color');
+            if(bombsPosition.includes(num)){
+                cell.classList.add('click-color-bomb')
+            }else{
+                cell.classList.add('click-color');
+            } 
         })
         //cell deve avere un ritorno? Si, deve 
         //tornare la cell

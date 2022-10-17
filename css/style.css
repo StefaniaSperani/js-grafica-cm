@@ -51,7 +51,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .click-color{
     background-color: var(--blue);
@@ -59,4 +59,5 @@ main{
 }
 .click-color-bomb{
     background-color: rgb(185, 19, 19);
+    color: white;
 }
