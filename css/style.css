@@ -42,6 +42,7 @@ main{
     flex-wrap: wrap;
     align-content: flex-start;
     background-color: var(--azure);
+    box-shadow: 0px 0px 30px #fffefe;
     width: 500px;
     height: 500px;
     cursor: pointer;
@@ -54,4 +55,8 @@ main{
 }
 .click-color{
     background-color: var(--blue);
+    color: white;
+}
+.click-color-bomb{
+    background-color: rgb(185, 19, 19);
 }

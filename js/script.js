@@ -35,9 +35,9 @@ console.log('Inizia!');
     //2.ora creo una variabile che mi indica il numero di celle 
     //da inserire dentro l griglia di gioco
     let numCell;
-     //creo la variabile che mi servirà per appenderci cio che creo
-     const playground = document.getElementById('playground');
-     playground.innerHTML = '';
+    //creo la variabile che mi servirà per appenderci cio che creo
+    const playground = document.getElementById('playground');
+    playground.innerHTML = '';
     //Bonus.quando faccio play ho bisogno del valore della select
     //che verrà introdotto (in questo caso la difficoltà)
     const levelHtml = document.getElementById('difficulty');
@@ -65,12 +65,10 @@ console.log('Inizia!');
         if(!bombsPosition.includes(bomb)){
             //e se tutto è ok li PUSHO nell'array
             bombsPosition.push(bomb);
-            console.log(bombsPosition);
+            // console.log(bombsPosition);
         }
-
     }
-
-
+    
     //2.creo la funzione che crea la cella
     function drawCell(num){
         //Bonus.mi serve una variabile che definisca
@@ -105,7 +103,7 @@ console.log('Inizia!');
         const grid = document.createElement('div');
         //e gli aggiungo la classe che gli darà lo stile dal css
         grid.className = 'grid';
-
+        //con un ciclo for vado a creare le celle
         for(let i = 1; i <= numCell; i++){
             //2.ora qua metto la variabile cell
             //che dovrà girare la
@@ -121,7 +119,6 @@ console.log('Inizia!');
     //ora chiamiamo la funzione che disegnerà la griglia
     //con annessi i suoi quadrati all'interno
     drawGrid();
-
 }
 //ora che ho la funzione pronta, la attacco
 //al bottone play, e al click eseguirà quello che gli ho detto
