@@ -20,7 +20,7 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 const playBtn = document.getElementById('play');
 
 //creo la funzione che mi permette di ottenere 
-//l'azione nel blocco al blick del bottone
+//l'azione nel blocco al click del bottone
 function play(){
 console.log('Inizia!');
     //BONUS2.creo una variabile con valore il numer

@@ -57,9 +57,10 @@ main{
 .click-color{
     background-color: var(--blue);
     color: var(--white);
+    transition: all 250ms;
 }
 .click-color-bomb{
     background-color: rgb(185, 19, 19);
     color: var(--white);
-
+    transition: all 250ms;
 }
